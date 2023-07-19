@@ -48,7 +48,7 @@ const NavA = styled(Link) ({
 })
 
 
-const Main = styled(Link)({
+const Main = styled('main')({
     backgroundImage: `linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .7)), url(${ whip_image});`,
     width: '100%',
     height: '100%',
