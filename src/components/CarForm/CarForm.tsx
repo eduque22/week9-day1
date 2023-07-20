@@ -53,7 +53,7 @@ export const CarForm = (props:CarFormProps) => {
         <div>
             <form onSubmit={handleSubmit(onSubmit)}>
                 <div>
-                    <label htmlFor='make'>Vehicle Name</label>
+                    <label htmlFor='make'>Vehicle Make</label>
                     <Input {...register('make')} name='make' placeholder='Vehicle Make' />
                 </div>
                 <div>

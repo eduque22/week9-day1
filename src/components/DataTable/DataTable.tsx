@@ -8,7 +8,8 @@ import {
     DialogActions,
     DialogContent,
     DialogContentText,
-    DialogTitle
+    DialogTitle,
+    Typography
 } from '@mui/material';
 
 
@@ -69,6 +70,9 @@ export const DataTable = () => {
         console.log(carData)
     }, [carData])
 
+    const myAuth = localStorage.getItem('myAuth')
+
+    if (myAuth) {
     return (
         <Box sx={{height: 400, width: '100%'}}>
             <DataGrid
@@ -98,5 +102,11 @@ export const DataTable = () => {
                 </DialogActions>
             </Dialog>
         </Box>
-    )
+    )} else {
+        return (
+            <Box>
+                <Typography variant='h4'>Please Sign In To View Your Vehicles!</Typography>
+            </Box>
+        )
+    }
 }

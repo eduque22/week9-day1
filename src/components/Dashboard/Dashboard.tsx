@@ -179,7 +179,6 @@ export const Dashboard = () => {
             </MUIDrawer>
             <Box sx={myStyles.content} >
                 <Box sx={myStyles.drawerHeader} />
-                <Typography variant='h1'>Hello y'all until we have data.</Typography>
                 <DataTable />
             </Box>
 
