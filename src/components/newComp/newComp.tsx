@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { styled } from '@mui/system';
 import { Button } from '@mui/material';
@@ -6,8 +7,9 @@ import { Link } from 'react-router-dom';
 import { signOut } from 'firebase/auth';
 
 
+
 interface Props {
-    title:string;
+    
 }
 
 
@@ -68,7 +70,10 @@ const MainText = styled('div')({
     color: 'white'
 })
 
-export const Home = (props:Props) => {
+
+
+
+export const NewComp = (props:Props) => {
     const myAuth = localStorage.getItem('myAuth')
 
     return (
@@ -101,9 +106,8 @@ export const Home = (props:Props) => {
             </NavBarContainer>
             <Main>
                 <MainText>
-                    <h1>{props.title}</h1>
-                    <p>Welcome to Car Collector's Club!</p>
-                    <Button color='primary' variant='contained' component={Link} to='/dashboard'>See The Cars!</Button>
+                    <p>Learn how to race below!</p>
+                    <Button color='primary' variant='contained' href='https://www.youtube.com/watch?v=uIkATjEOLe0&list=PL0a16lfLrWtxAgLsQKnMiT-i1-DZruUC-'>Learn More</Button>
                 </MainText>
             </Main>
         </Root>

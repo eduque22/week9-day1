@@ -8,7 +8,7 @@ import 'firebase/auth';
 
 
 
-import { Home, Dashboard, SignIn, SignUp } from './components/index';
+import { Home, Dashboard, SignIn, SignUp, NewComp } from './components/index';
 import './index.css'
 import { theme } from './Theme/themes';
 import { store } from './redux/store';
@@ -27,6 +27,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
               <Route path='/dashboard' element={<Dashboard />} />
               <Route path='/signin' element={<SignIn />} />
               <Route path ='/signup' element={<SignUp />} />
+              <Route path= '/newcomp' element={<NewComp />} />
             </Routes>
           </Router> 
         </ThemeProvider>

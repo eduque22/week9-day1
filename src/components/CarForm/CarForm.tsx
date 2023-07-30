@@ -22,7 +22,7 @@ interface CarFormProps {
 
 
 export const CarForm = (props:CarFormProps) => {
-    const dispatch = useDispatch();
+    const dispatch = useDispatch()
     const store = useStore();
     const { register, handleSubmit } = useForm<CarState>({})
 
